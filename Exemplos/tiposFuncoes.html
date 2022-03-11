@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tipos de Funções</title>
+    <link rel="stylesheet" href="./estilos.css" type="text/css">
+</head>
+
+<body>
+    <p>Tente alterar a ordem das declarações do JS</p>
+    <p>Tente alterar a ordem das declarações do JS</p>
+    <p>Tente alterar a ordem das declarações do JS</p>
+
+    <button type="button">Clique aqui</button>
+    <button type="button">Clique aqui</button>
+    <button type="button">Reload</button>
+
+    <script>
+        /* (3) Bloco de funções ---------------------- */
+        // Expressão de uma função - Função Anônima
+        const minhafuncAnon = function () {
+            txt.className = "bordaVerde"
+            console.log("A função 'minhafuncAnon' foi executada");
+        };
+        // Declaração de uma função - Função Nomeada
+        function minhafuncDeclar() {
+            txt.innerHTML = "<strong>Texto alterado pelo JS</strong>"
+            console.log("A função 'minhafuncNome' foi executada");
+        };
+        // Arrow Function - Função de Flecha
+        const minhafuncArrow = () => location.reload();
+    </script>
+
+    <script>
+        /* (1) Bloco de declarações ----------------- */
+        const btn = document.getElementsByTagName("button");
+        let txt = document.getElementsByTagName("p")[1];
+
+        /* (2) Bloco de eventos -------------------------- */
+        btn[0].addEventListener("click", minhafuncAnon);
+        btn[1].addEventListener("click", minhafuncDeclar);
+        btn[2].addEventListener("click", minhafuncArrow);
+    </script>
+</body>
+
+</html>
+

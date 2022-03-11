@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declarando e chamando funções</title>
+    <script>
+        // declarando a função meuAlerta
+        function meuAlerta(){ alert("Alerta executado após chamar a função") }
+
+        // declarando a função meuAlerta
+        function meuConfirm(){ confirm("Apenas após ser chamado") }
+    </script>
+</head>
+<body>
+    <p>Foram declaradas duas funcões "meuAlerta()" e "meuConfirm()"</p>
+    <p>As funções foram declaradas no cabeçalho, porém elas foram executadas
+        após o corpo ser completamente carregado no navegador</p>
+    <p>Estas funções podem ser reutilizadas, por exemplo, pelo Console</p>
+    <script>
+        meuAlerta();
+        meuConfirm();
+        // tente executar estas funções pelo console
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

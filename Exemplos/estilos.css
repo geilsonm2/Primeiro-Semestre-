@@ -1,0 +1,43 @@
+
+
+.bordaVerde{
+    border: 2px green solid;
+    padding: 10px;
+}
+
+.bordaVermelha{
+    border: 2px red dashed;
+    padding: 10px;
+}
+
+.caixa{
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.bloco{
+    display: inline-block;
+}
+
+
+
+/* Utilizados em form.html */
+.container {
+    width: 350px;
+    margin: 40px auto;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+.blocosForm {
+    padding: 20px 10px;
+    margin: 5px;
+    background-color:seashell;
+}
+
+#resumo {
+    visibility: hidden;
+}

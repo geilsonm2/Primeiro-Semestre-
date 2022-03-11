@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declarando um objeto e suas propriedades</title>
+</head>
+<body>
+    <p>Utilize o Console para verificar o objeto e suas propriedades</p>
+    <script>
+        // declaração de um objeto
+        let celular = {}
+
+        // declaração das propriedades do objeto
+        celular = { marca: "Samsung",
+                    modelo: "Galaxy Note 20",
+                    chipset: "Exynos 990",
+                    ram: 8,
+                    armazenamento: 256,
+                    leitorDigital: true,
+                    dimensoes: {altura: 161.6,
+                                largura: 75.2,
+                                espessura:8.3},
+                    modoNoturno: function () { }
+        }
+        /* 
+            marca: essas propriedade é uma string,
+            modelo: essas propriedade é uma string,
+            chipset: essas propriedade é uma string,
+            ram: essas propriedade é um número
+            armazenamento: essas propriedade é um número
+            leitorDigital: essas propriedade é um booleano
+            dimensoes: essas propriedade é um objeto
+            modoNoturno: essas propriedade é uma função    
+        */
+
+        // funções de objetos nós chamamos de métodos
+        // modoNoturno é um método do celular!
+
+        alert("celular é =" + celular)
+        alert("celular.marca é =" + celular.marca)
+        alert("celular.dimensoes é =" + celular.dimensoes)
+        alert("celular.dimensoes.altura é =" + celular.dimensoes.altura)
+        alert("celular.modoNoturno é =" + celular.modoNoturno)
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

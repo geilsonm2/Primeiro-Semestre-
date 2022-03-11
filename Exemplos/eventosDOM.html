@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="botao1">Clique aqui botao1</button>
+
+    <script>
+        /* construindo um disparador de evento:
+            1) utilizamos o método addEventListener 
+                do elemento (objeto) ;
+            2) escolhemos um evento, 
+                por exemplo, "click";
+            3) descrevemos a função a ser executada, 
+                por exemplo, function(){} */
+
+        // elemento.addEventListener(evento, função)
+        
+
+        // Evento acionado utlizando o método addEventListener()
+        let btn1 = document.getElementById("botao1");
+        btn1.addEventListener("click", function () {
+            alert("Oi, Você clicou no botao1!");
+        });
+    </script>
+</body>
+
+</html>
+
+

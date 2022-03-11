@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de captura de elementos</title>
+    <style>
+        #container { margin: 30px auto; width: 200px; text-align: center; }
+        div { border: 2px solid black; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="microContainer">
+            <p id="par1" class="menores">Este é o parágrafo 1</p>
+            <p id="par2" class="menores">Este é o parágrafo 2</p>
+            <p id="par3" class="menores">Este é o parágrafo 3</p>
+        </div>
+        <div class="microContainer">
+            <p id="par4" class="maiores">Este é o parágrafo 4</p>
+            <p id="par5" class="maiores">Este é o parágrafo 5</p>
+            <p id="par6" class="maiores">Este é o parágrafo 6</p>
+        </div>
+    </div>
+
+    <button id="botao">Não clique aqui</button>
+
+    <script src="./scriptsfinal.js"></script>
+
+    <script>
+    
+    document.getElementById("par1").innerHTML="Este é o parágrafo 1";
+
+
+   
+
+    </script>
+
+</body>
+
+</html>
+

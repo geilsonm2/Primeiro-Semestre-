@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Temporizadores</title>
+</head>
+
+<body>
+    <p></p>
+    <p>Um Alerta será apresentado após 2 segundos de carregamento</p>
+
+    <button type="button">Cancelar Timeout</button>
+    <button type="button">Para Interval</button>
+
+    <script>
+        const p = document.querySelector("p"); //captura o primeiro elemento p
+        const btn = document.querySelectorAll("button");
+    </script>
+
+    <script>
+        let idDoTimer // tente colocar o let dentro do Bloco Timeout
+
+        // Bloco Timeout ------------------
+        let timer = 2000; // 2s
+        const iniciarTimer = () => {
+            // txt está no escopo local
+            let txt = "Tente cancelar o Timeout antes de"+
+                        " aparecer este alerta. \nAtualize a página";
+            idDoTimer = setTimeout(() => alert(txt), timer);
+        };
+        
+        // Bloco Parar Timeout ------------------
+        const pararTimer = () => {
+            clearTimeout(idDoTimer);
+            btn[0].innerText = "Timer cancelado";
+        };
+    </script>
+
+    <script>
+        let idDoContador
+        let contador = 1000; // 500ms
+        let qnt = 0;
+        let txt
+
+        // Bloco Contador ------------------
+        const iniciarContador = () => nomeDoInterval = setInterval(function () {
+            txt = "Esta mensagem foi atualizada " + qnt + " vez(es)";
+            p.textContent = txt;
+            qnt = qnt + 1
+        }, contador);
+
+        // Bloco Parar Contador ------------------
+        const pararContador = () => clearInterval(nomeDoInterval);
+    </script>
+
+    <script>
+        // event listener com o evento "load" da janela
+        window.addEventListener("load", iniciarTimer);
+        window.addEventListener("load", iniciarContador);
+
+        // event listener com o evento "click" sobre btn
+        btn[0].addEventListener("click", pararTimer);
+        btn[1].addEventListener("click", pararContador);
+    </script>
+
+</body>
+
+</html>
+

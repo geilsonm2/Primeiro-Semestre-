@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método simples .write</title>
+    <style>
+        span{
+            color: red;
+        }
+        .naveg{
+            color: rgb(84, 130, 14);
+        }
+    </style>
+</head>
+<body>
+    <p>Este parágrafo foi criado pelo desenvolvedor</p>
+    <script>
+        document.write("<p class='naveg'>O que estiver verde foi criado pelo navegador</p>")
+    </script>
+    <p>
+        A ideia por trás do método '.write' do 'document', ou seja,
+        'document.write()' é aceitar um argumento de entrada e 
+        imprimir no HTML em formato HTML.
+    </p>
+    <p>
+        Portanto <span>document.write("texto")</span> imprime <span>texto</span> no HTML e,
+        mais importante do que isso, <span>document.write("&ltstrong&gt texto&lt/strong&gt")</span> 
+        imprime <span><strong>texto</strong></span> no HTML
+    </p>
+    <script>
+        document.write("<strong class='naveg'>texto</strong>")
+    </script>
+    <p>
+        Compare a aba Elements do navegador, com o código fonte desta página!
+    </p>
+</body>
+</html>
+
